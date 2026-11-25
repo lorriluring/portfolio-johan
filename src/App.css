@@ -1,0 +1,340 @@
+/*Add breathing space for sections*/
+section {
+  padding: 4rem 2rem;
+}
+/*Headlines get some distance*/
+h1,
+h2,
+h3 {
+  margin-bottom: 1rem;
+}
+/* Make text easier to read */
+p {
+  line-height: 1.7;
+}
+/* Align main content to the center with some spacing */
+.hero {
+  text-align: center;
+  padding: 2rem;
+}
+
+/*make the main profileimg rounded and size-appropriate */
+.hero img {
+  width: 200px;
+  border-radius: 15%;
+}
+
+.hero-button {
+  display: inline-block;
+
+  margin-top: 1rem;
+  padding: 0.8rem 1.5rem;
+
+  background-color: #2563eb;
+  color: white;
+
+  border-radius: 8px;
+
+  font-weight: 500;
+}
+.hero-button:hover {
+  background-color: #1d4ed8;
+}
+/* make the navbarlinks horizontal and border on bottom */
+.navbar {
+  position: sticky;
+  top: 0;
+  background-color: white;
+  padding: 1rem;
+  border-bottom: 2px solid #e5e7eb;
+}
+
+/* navbar centered links and gap for readability */
+.navbar ul {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+}
+
+.navbar a {
+  font-weight: 500;
+}
+/* Sections wont pull over the entire screen on wide screens  */
+section {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem 2rem;
+}
+/* make the hero part feel like an actual main/home part of the site and not just text on text  */
+.hero {
+  text-align: center;
+  padding: 5rem 2rem;
+}
+
+.hero h1 {
+  font-size: 4rem;
+  margin-bottom: 1rem;
+}
+
+.hero h2 {
+  margin-bottom: 1rem;
+  color: #4f46e5;
+}
+
+.hero p {
+  max-width: 70ch;
+  margin: 0 auto 1rem;
+}
+/* make the button look more attractive to click on */
+.hero button {
+  margin-top: 1rem;
+  padding: 0.8rem 1.5rem;
+  border: none;
+  border-radius: 8px;
+  background-color: #142344;
+  color: white;
+  cursor: pointer;
+}
+
+/* make about pleasant to read */
+.about {
+  max-width: 900px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.about h3 {
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+}
+
+.about p {
+  max-width: 70ch;
+  margin: 0 auto;
+}
+/* makes the skills center*/
+.skills {
+  text-align: center;
+}
+/* Wrap the skills list content */
+.skills ul {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+/* make the skills more graphically popping */
+.skills li {
+  background-color: #e5e7eb;
+  padding: 0.5rem 1rem;
+  border-radius: 20px;
+  font-weight: 500;
+}
+
+.projects {
+  text-align: center;
+}
+/* style the projectcards */
+.projects article {
+  border: 2px solid #e5e7eb;
+  border-radius: 12px;
+  padding: 1.5rem;
+  margin-bottom: 1rem;
+  cursor: pointer;
+  transition:
+    transform 0.2s ease,
+    box-shadow 0.2s ease;
+}
+
+.projects article:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+}
+
+/* projectcards automatically places neatly on row / smaller screens  */
+.projects > div {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 1.5rem;
+}
+.projects article ul {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 0.5rem;
+  margin-top: 1rem;
+}
+
+.projects article li {
+  background-color: #e5e7eb;
+  padding: 0.35rem 0.8rem;
+  border-radius: 20px;
+  font-size: 0.9rem;
+  font-weight: 500;
+}
+.projects article img {
+  width: 100%;
+  height: 220px;
+  object-fit: cover;
+  border-radius: 8px;
+  margin-bottom: 1rem;
+}
+.modal {
+  position: fixed;
+  inset: 0;
+  padding: 2rem;
+  background: rgba(0, 0, 0, 0.7);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.modal-content {
+  background: white;
+  margin: auto;
+  width: 90%;
+  max-width: 800px;
+  max-height: 90vh;
+  overflow-y: auto;
+  padding: 2rem;
+  border-radius: 12px;
+}
+.modal-content img {
+  width: 100%;
+  max-width: 700px;
+  max-height: 400px;
+  object-fit: contain;
+  margin: 1rem auto;
+  border-radius: 8px;
+}
+.modal-content button {
+  float: right;
+  border: none;
+  background: transparent;
+  font-size: 2rem;
+  font-family: "Courier New", Courier, monospace;
+  cursor: pointer;
+}
+
+.modal-navigation {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  margin-top: 1rem;
+}
+.modal-navigation span {
+  font-weight: bold;
+}
+
+.modal-navigation button {
+  background-color: #4f46e5;
+  color: white;
+  border: none;
+  padding: 0.75rem 1.25rem;
+  border-radius: 8px;
+  cursor: pointer;
+}
+.modal-navigation button:hover {
+  background-color: #4338ca;
+}
+.experiences {
+  text-align: center;
+}
+/* style the projectcards */
+.experiences li {
+  border: 2px solid #e5e7eb;
+  border-radius: 12px;
+  padding: 1.5rem;
+  margin-bottom: 1rem;
+}
+/* projectcards automatically places neatly on row / smaller screens  */
+.experiences > ul {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 1.5rem;
+}
+.experiences h3 {
+  margin-bottom: 0.5rem;
+}
+
+.experiences p {
+  margin-bottom: 0.25rem;
+}
+
+/* add styling for contact*/
+
+.contact {
+  text-align: center;
+  padding: 6rem 2rem;
+}
+
+.contact h2 {
+  margin-bottom: 1rem;
+}
+
+.contact p {
+  max-width: 60ch;
+  margin: 0 auto 2rem;
+}
+
+.contact-links {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+.contact-links a {
+  background-color: #e5e7eb;
+  padding: 0.75rem 1.25rem;
+  border-radius: 20px;
+  font-weight: 500;
+}
+
+.contact-links a:hover {
+  background-color: #d1d5db;
+}
+.footer {
+  position: sticky;
+  top: 0;
+  background-color: white;
+  padding: 1rem;
+  border-bottom: 2px solid #e5e7eb;
+}
+.footer p {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+}
+
+@media (max-width: 768px) {
+  .navbar ul {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1rem;
+  }
+
+  .hero h1 {
+    font-size: 2.5rem;
+  }
+
+  .hero img {
+    width: 150px;
+  }
+
+  .skills ul {
+    gap: 0.5rem;
+  }
+
+  .projects article {
+    width: 100%;
+  }
+  .projects article ul {
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  .projects > div {
+    grid-template-columns: 1fr;
+  }
+}
