@@ -1,16 +1,101 @@
-# React + Vite
+# Personal Portfolio Website
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## Project Description
 
-Currently, two official plugins are available:
+This project is a personal portfolio website built with React and Vite. The purpose of the website is to showcase my background, skills, projects, and professional experience in UX Design, Service Design, and Full Stack Development.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+The portfolio was developed as part of the Full Stack Development program and demonstrates both frontend development skills and React fundamentals.
 
-## React Compiler
+---
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## Features
 
-## Expanding the ESLint configuration
+- Responsive design for desktop, tablet, and mobile devices
+- Navigation between sections
+- Hero section with introduction and call-to-action
+- Skills section generated dynamically using React
+- Project gallery with project images
+- Interactive project modal with image navigation
+- Experience section
+- Contact call-to-action
+- Project cards built as reusable React components
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+---
+
+## Technologies
+
+- React
+- Vite
+- JavaScript
+- HTML
+- CSS
+- Git
+- GitHub
+
+---
+
+## Installation
+
+Clone the repository:
+
+```bash
+git clone https://github.com/lorriluring/portfolio-johan.git
+```
+
+Move into the project folder:
+
+```bash
+cd portfolio-johan
+```
+
+Install dependencies:
+
+```bash
+npm install
+```
+
+---
+
+## How to Run
+
+Start the development server:
+
+```bash
+npm run dev
+```
+
+Open the local development URL displayed in the terminal.
+
+---
+
+## Screenshots
+
+### Home Page
+
+![Home Page](screenshots/homepage.png)
+
+### Projects Section
+
+![Projects Section](screenshots/projects.png)
+
+### Project Modal
+
+![Project Modal](screenshots/projectmodal.png)
+
+---
+
+## Team Members
+
+### Johan Lorentz
+
+- GitHub: https://github.com/lorriluring
+
+---
+
+## Future Improvements
+
+- Add more detailed project case studies
+- Add GitHub and live demo links to projects
+- Improve project gallery navigation
+- Add dark mode support
+- Add additional projects as development experience grows

@@ -24,6 +24,7 @@ p {
   border-radius: 15%;
 }
 
+/* make button display as inline element with consistent spacing */
 .hero-button {
   display: inline-block;
 
@@ -37,6 +38,7 @@ p {
 
   font-weight: 500;
 }
+/* provide visual feedback on hover for better user experience */
 .hero-button:hover {
   background-color: #1d4ed8;
 }
@@ -56,10 +58,11 @@ p {
   gap: 2rem;
 }
 
+/* prevent links from wrapping and add spacing between them */
 .navbar a {
   font-weight: 500;
 }
-/* Sections wont pull over the entire screen on wide screens  */
+/* limit content width and center everything for better readability on wide screens */
 section {
   max-width: 1200px;
   margin: 0 auto;
@@ -71,16 +74,19 @@ section {
   padding: 5rem 2rem;
 }
 
+/* use large font size to establish visual hierarchy and emphasis */
 .hero h1 {
   font-size: 4rem;
   margin-bottom: 1rem;
 }
 
+/* use accent color to make subheading pop */
 .hero h2 {
   margin-bottom: 1rem;
   color: #4f46e5;
 }
 
+/* limit paragraph width for optimal readability (around 70 characters) */
 .hero p {
   max-width: 70ch;
   margin: 0 auto 1rem;
@@ -103,11 +109,13 @@ section {
   text-align: center;
 }
 
+/* add spacing between subsections for visual separation */
 .about h3 {
   margin-top: 2rem;
   margin-bottom: 1rem;
 }
 
+/* limit paragraph width for optimal readability */
 .about p {
   max-width: 70ch;
   margin: 0 auto;
@@ -131,6 +139,7 @@ section {
   font-weight: 500;
 }
 
+/* center and organize project section */
 .projects {
   text-align: center;
 }
@@ -157,6 +166,7 @@ section {
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   gap: 1.5rem;
 }
+/* add small gaps between tags for better visual separation */
 .projects article ul {
   display: flex;
   flex-wrap: wrap;
@@ -165,6 +175,7 @@ section {
   margin-top: 1rem;
 }
 
+/* style tags within project cards for consistent appearance */
 .projects article li {
   background-color: #e5e7eb;
   padding: 0.35rem 0.8rem;
@@ -172,6 +183,7 @@ section {
   font-size: 0.9rem;
   font-weight: 500;
 }
+/* ensure images maintain aspect ratio and look polished */
 .projects article img {
   width: 100%;
   height: 220px;
@@ -179,6 +191,7 @@ section {
   border-radius: 8px;
   margin-bottom: 1rem;
 }
+/* cover entire viewport with semi-transparent overlay to focus attention on modal */
 .modal {
   position: fixed;
   inset: 0;
@@ -190,6 +203,7 @@ section {
   z-index: 1000;
 }
 
+/* create scrollable container with max dimensions to handle various screen sizes */
 .modal-content {
   background: white;
   margin: auto;
@@ -200,6 +214,7 @@ section {
   padding: 2rem;
   border-radius: 12px;
 }
+/* scale images responsively while maintaining aspect ratio */
 .modal-content img {
   width: 100%;
   max-width: 700px;
@@ -208,6 +223,7 @@ section {
   margin: 1rem auto;
   border-radius: 8px;
 }
+/* position close button in top-right corner with minimal styling */
 .modal-content button {
   float: right;
   border: none;
@@ -217,6 +233,7 @@ section {
   cursor: pointer;
 }
 
+/* arrange navigation controls horizontally with consistent spacing */
 .modal-navigation {
   display: flex;
   align-items: center;
@@ -224,10 +241,12 @@ section {
   gap: 1rem;
   margin-top: 1rem;
 }
+/* make page counter text stand out */
 .modal-navigation span {
   font-weight: bold;
 }
 
+/* style navigation buttons with accent color and hover effect */
 .modal-navigation button {
   background-color: #4f46e5;
   color: white;
@@ -236,55 +255,62 @@ section {
   border-radius: 8px;
   cursor: pointer;
 }
+/* provide visual feedback on button hover */
 .modal-navigation button:hover {
   background-color: #4338ca;
 }
+/* center and organize experience section */
 .experiences {
   text-align: center;
 }
-/* style the projectcards */
+/* style the experience cards */
 .experiences li {
   border: 2px solid #e5e7eb;
   border-radius: 12px;
   padding: 1.5rem;
   margin-bottom: 1rem;
 }
-/* projectcards automatically places neatly on row / smaller screens  */
+/* create responsive grid layout for experience cards */
 .experiences > ul {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   gap: 1.5rem;
 }
+/* reduce spacing between title and company info */
 .experiences h3 {
   margin-bottom: 0.5rem;
 }
 
+/* minimize spacing between paragraphs for tight info layout */
 .experiences p {
   margin-bottom: 0.25rem;
 }
 
-/* add styling for contact*/
-
+/* add styling for contact section with generous padding */
 .contact {
   text-align: center;
   padding: 6rem 2rem;
 }
 
+/* add space below heading for visual separation */
 .contact h2 {
   margin-bottom: 1rem;
 }
 
+/* limit paragraph width for readability and add spacing before links */
 .contact p {
   max-width: 60ch;
   margin: 0 auto 2rem;
 }
 
+/* arrange contact links horizontally with responsive wrapping */
 .contact-links {
   display: flex;
   justify-content: center;
   gap: 1rem;
   flex-wrap: wrap;
 }
+/* style contact links as rounded pill buttons */
 .contact-links a {
   background-color: #e5e7eb;
   padding: 0.75rem 1.25rem;
@@ -292,9 +318,11 @@ section {
   font-weight: 500;
 }
 
+/* provide subtle visual feedback on link hover */
 .contact-links a:hover {
   background-color: #d1d5db;
 }
+/* stick footer to top (note: should probably be bottom in production) */
 .footer {
   position: sticky;
   top: 0;
@@ -302,38 +330,47 @@ section {
   padding: 1rem;
   border-bottom: 2px solid #e5e7eb;
 }
+/* arrange footer content horizontally with spacing */
 .footer p {
   display: flex;
   justify-content: center;
   gap: 2rem;
 }
 
+/* adjust layout for smaller screens */
 @media (max-width: 768px) {
+  /* allow navigation links to wrap on mobile devices */
   .navbar ul {
     flex-wrap: wrap;
     justify-content: center;
     gap: 1rem;
   }
 
+  /* reduce headline size on mobile for space efficiency */
   .hero h1 {
     font-size: 2.5rem;
   }
 
+  /* scale down profile image on mobile devices */
   .hero img {
     width: 150px;
   }
 
+  /* reduce gap between skill tags on small screens */
   .skills ul {
     gap: 0.5rem;
   }
 
+  /* make project cards full width on mobile */
   .projects article {
     width: 100%;
   }
+  /* ensure tag layout stays centered on mobile */
   .projects article ul {
     justify-content: center;
     flex-wrap: wrap;
   }
+  /* switch grid to single column layout on mobile */
   .projects > div {
     grid-template-columns: 1fr;
   }
