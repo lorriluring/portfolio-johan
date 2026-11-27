@@ -322,10 +322,8 @@ section {
 .contact-links a:hover {
   background-color: #d1d5db;
 }
-/* stick footer to top (note: should probably be bottom in production) */
+/* provide styling to footer */
 .footer {
-  position: sticky;
-  top: 0;
   background-color: white;
   padding: 1rem;
   border-bottom: 2px solid #e5e7eb;
@@ -373,5 +371,10 @@ section {
   /* switch grid to single column layout on mobile */
   .projects > div {
     grid-template-columns: 1fr;
+  }
+
+  .modal-navigation button {
+    font-size: 0.9rem;
+    padding: 0.5rem 1rem;
   }
 }
